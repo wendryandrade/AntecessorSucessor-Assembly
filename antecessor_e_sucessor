@@ -9,8 +9,8 @@ sucessor: 	.word 10
 		
 	    .text
 
-main:	addi $v0, $zero, 4		# imprime mensagem
-	la $a0, mensagem
+main: addi $v0, $zero, 4		# imprime mensagem
+      la $a0, mensagem
       syscall
 
       addi $v0, $zero, 5 		# lê inteiro
@@ -43,4 +43,4 @@ main:	addi $v0, $zero, 4		# imprime mensagem
       syscall
 
 
-	jr $ra
+      jr $ra
