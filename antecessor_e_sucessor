@@ -19,8 +19,8 @@ main: addi $v0, $zero, 4		# imprime mensagem
       addi $t2, $v0, 0			# $t2 = numero que foi lido
 
 
-      addi $t0, $t2, -1			# calcula antecessor
-      sw $t0, antecessor($zero)		# grava antecessor
+      addi $t0, $t2, -1		        # calcula antecessor
+      sw $t0, antecessor($zero)	        # grava antecessor
 
       addi $v0, $zero, 4		# imprime mensagem1
       la $a0, mensagem1
